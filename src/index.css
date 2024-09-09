@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    direction: rtl;
+    font-family: 'Yekan' !important;
+}
+
+.BoldYekan {
+    font-family: 'BoldYekan' !important;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6F4EFD;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a1fbf;
+    cursor: grab;
+}
+
+@layer base {
+    @font-face {
+        font-family: 'Yekan';
+        src: url(./assets/Font/yekanbakh/YekanBakh-Regular.woff2) format('woff2');
+    }
+
+    @font-face {
+        font-family: 'BoldYekan';
+        src: url(./assets/Font/yekanbakh/YekanBakh-Bold.woff) format('woff');
+    }
+
+    @media (min-width: 1536px) {
+        .container {
+            max-width: 1351px !important;
+        }
+    }
+}
